@@ -1,0 +1,74 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    background-color: #d0bde9;
+    border-radius: 30px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.container header .nav {
+    margin: 10px;
+    color:#6633a8;
+    text-decoration: none;
+}
+
+.nav:hover {
+    opacity: 0.50;
+}
+
+
+img{ 
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border-color: rgb(211, 146, 211);
+    border-style: solid;
+}
+
+h2 {
+    text-decoration: underline; 
+}
+
+.sobreMi, .contacto, .estudios, .idiomas, .herramientas, .experiencia, .contactar {
+    padding:20px 100px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 2px rgb(189, 166, 218) solid;
+    background-color: antiquewhite;
+}
+
+
+.input {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-bottom: 1px solid rgba(125, 45, 145, 0.6);
+    outline: none;
+    padding: 5px 10px;  
+}
+
+button {
+    background-color: #7f4ac4;
+    color: white;
+    font-weight: 500;
+    font-size: 10pt;
+    text-align: center;
+    padding: 15px;
+    border-color: #8152be;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.75;
+}
+
+
+
