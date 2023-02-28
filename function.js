@@ -18,3 +18,5 @@ function ValidateEmail(mail)
     alert("Ingresaste una dirección no válida!")
     return (false);
 }
+
+
