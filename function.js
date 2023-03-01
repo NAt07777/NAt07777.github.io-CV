@@ -1,3 +1,8 @@
+function enableDarkMode() {
+  let main_body = document.body;
+  main_body.classList.toggle("DarkMode");
+}
+
 function scrollElement(){
   var element = document.getElementById(nav);
   element.scrollTo();
