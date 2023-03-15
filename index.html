@@ -4,26 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum</title>
+  
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400;1,500&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/9e4bcac4da.js" crossorigin="anonymous"></script>
+<title>Curriculum</title>
 </head>
 <body>
+  <!--Modo oscuro-->
   <input id="darkmode"  type="checkbox" onclick="enableDarkMode()">
   <div class="container" >
     <header>
-      <nav id="nav">
+      <!--Barra de navegación-->
+      <nav class="topnav" id="myTopnav">
+        <a href = "#home" class="active">Home</a>
         <a href = "#sobreMi" class="nav">Sobre mi</a>
-        <a href="#contacto" class="nav">Contacto</a>
         <a href="#estudios" class="nav">Estudios</a>
         <a href="#idiomas" class="nav">Idiomas</a>
         <a href="#herramientas" class="nav">Herramientas de software</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
     <br>
+    <!--Seccion información-->
     <img src="https://cdn-images.livecareer.es/pages/foto_cv_lc_es_7.jpg" alt="rostro">
     <h1>Natalia Graciano</h1>
     <h3>Diseño UX</h3>
@@ -33,7 +40,7 @@
     <h2>Sobre mi</h2>
     <p>Estudiante de Administración 
       de Empresas.</p>
-      <p></p>Me considero una persona
+      <p>Me considero una persona
       responsable y ordenada y muy puntual.
       Me encantan los desafios y trabajar en equipo.</p>
       <p>Estoy buscando mi primera 
@@ -52,7 +59,6 @@
           lugar.</span>
         </div>
         <div class="estudios" id="estudios">
-        </ul>
         <h2>Estudios</h2>
       <h4>Universidad Borcelle</h4>
       <span>Carrera de diseño UX, en curso.</span>
@@ -86,6 +92,7 @@
     </div>
     
     <hr>
+    <!--Formulario de contacto-->
     <div class="contactar" id="contactar">
       <h3>Contactar</h3>
       <form  id="form" action="" method="get">
@@ -93,21 +100,24 @@
         <input class="input" type="text" id="name" name="name"  placeholder="Tu nombre" required>
       </label>
       <label for="last_name">
-        <input class="input" type="text" id="last_name" name="last_name" placeholder="Apellido"required >
+        <input class="input" type="text" id="last_name" name="last_name" placeholder="Apellido" required >
       </label>
       <label for="mail">
         <input class="input" type="email" id="mail" name="email" placeholder="mail" required>
       </label>
       <label for="text">
-        <textarea class="input" id="mensaje" name="description" placeholder="Motivo de contacto" ></textarea>
+        <textarea class="input" id="text" name="description" placeholder="Motivo de contacto" ></textarea>
       </label>
       <label for="button">
-        <button type="submit" class="submit-btn" id="boton">Enviar</button>
+        <button type="submit" class="submit-btn" id="button">Enviar</button>
       </label>
         </form>
     </div> 
   <br>
-  <button class="descargar-cv" input type="button" value="imprime-cv" onclick="window.print()">Descargar cv</button>
+  <!--Botón para descargar cv-->
+  <button class="descargar-cv" type="button" value="imprime-cv" onclick="window.print()">Descargar cv</button>
+  <!--Botón scrool up-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <script src="function.js"></script>
 
